@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Balls</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onkeyup="handleKey(event)" onload="initGame()">
+  <h1>Collect those Balls</h1>
+  <button onclick="restartGame()">restart</button>
+  <br>
+  <div>Collected Balls: <span class="balls-count">0</span></div><br>
+  <div>Balls left to collect: <span class="balls-num">2</span></div><br>
+
+  <table>
+    <tbody class="board"></tbody>
+  </table>
+
+  <div class="modal">
+    <button onclick="closeModal()">x</button>
+    <h3>GAME OVER!</h3>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="js/util.js"></script>
+
+</body>
+
+</html>
